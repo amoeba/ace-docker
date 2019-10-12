@@ -1,0 +1,25 @@
+version: '3'
+services:
+  ace:
+    build: .
+    depends_on:
+      - db
+    networks:
+      - acenet
+    ports:
+      - 9000
+    volumes:
+      - ./Source/ACE.Server/Config.js:/aceserver/Config.js
+      - ./dats:/aceserver/dats
+
+  db:
+    image: mysql:latest
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+    networks:
+      - acenet
+
+networks:
+  acenet:
