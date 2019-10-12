@@ -3,6 +3,10 @@
 Not enitrely batteries-included Docker Compose setup for running an [ACE](https://github.com/ACEmulator/ACE) server.
 Based on the Dockerfile paradox shared in Discord October 10, 2019.
 
+## TODO
+
+- [ ] Get database script working properly on first run plus re-runs
+
 ## Pre-requisites
 
 - Docker

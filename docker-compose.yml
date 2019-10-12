@@ -9,7 +9,7 @@ services:
     ports:
       - 9000
     volumes:
-      - .ACE/Source/ACE.Server/Config.js:/aceserver/Config.js
+      - ./Config.js:/aceserver/Config.js
       - ./dats:/aceserver/dats
 
   db:

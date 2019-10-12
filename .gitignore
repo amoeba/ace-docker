@@ -1,2 +1,5 @@
 ACE
-dats/*.da
+dats/*.dat
+mysql-data
+*.zip
+*.sql
