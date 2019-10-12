@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build-env
 
 WORKDIR /aceserver
-ADD Source .
+ADD ACE/Source .
 RUN mkdir deploy \
   && dotnet restore \
   && dotnet publish -o /aceserver/deploy

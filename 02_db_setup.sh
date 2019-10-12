@@ -1,7 +1,6 @@
 #!/bin/sh
 
 set -e
-set -o
 
 docker exec -i ace_db_1 sh -c 'echo "drop database ace_auth" | exec mysql'
 docker exec -i ace_db_1 sh -c 'echo "drop database ace_world" | exec mysql'
